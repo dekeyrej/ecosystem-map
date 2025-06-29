@@ -1,0 +1,52 @@
+<svg width="960" height="440" xmlns="http://www.w3.org/2000/svg">
+  <!-- Microservice -->
+  <rect x="20" y="60" width="150" height="60" rx="10" ry="10" fill="#0d6efd"/>
+  <text x="95" y="95" font-size="14" fill="white" text-anchor="middle">Microservice</text>
+
+  <!-- Arrow to Postgres -->
+  <line x1="170" y1="90" x2="260" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="215" y="78" font-size="12" fill="#444" text-anchor="middle">UPDATE state</text>
+
+  <!-- Postgres -->
+  <rect x="260" y="60" width="140" height="60" rx="10" ry="10" fill="#6c757d"/>
+  <text x="330" y="95" font-size="14" fill="white" text-anchor="middle">Postgres</text>
+
+  <!-- Arrow down to Redis -->
+  <line x1="330" y1="120" x2="330" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="340" y="160" font-size="12" fill="#444">PUBLISH {'app'}</text>
+
+  <!-- Redis -->
+  <rect x="260" y="190" width="140" height="60" rx="10" ry="10" fill="#dc3545"/>
+  <text x="330" y="225" font-size="14" fill="white" text-anchor="middle">Redis (`update`)</text>
+
+  <!-- Arrow to nodeapiserver -->
+  <line x1="400" y1="220" x2="520" y2="220" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="460" y="210" font-size="12" fill="#444" text-anchor="middle">SUBSCRIBE + SELECT</text>
+
+  <!-- nodeapiserver -->
+  <rect x="520" y="190" width="150" height="60" rx="10" ry="10" fill="#198754"/>
+  <text x="595" y="225" font-size="14" fill="white" text-anchor="middle">nodeapiserver</text>
+
+  <!-- SSE Up to webdisplay -->
+  <line x1="595" y1="190" x2="595" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="605" y="155" font-size="12" fill="#444">SSE</text>
+
+  <!-- webdisplay -->
+  <rect x="520" y="60" width="150" height="60" rx="10" ry="10" fill="#0dcaf0"/>
+  <text x="595" y="95" font-size="14" fill="black" text-anchor="middle">Webdisplay</text>
+
+  <!-- Arrow to React -->
+  <line x1="670" y1="90" x2="780" y2="90" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="725" y="78" font-size="12" fill="#444" text-anchor="middle">fetchData() → render</text>
+
+  <!-- React -->
+  <rect x="780" y="60" width="130" height="60" rx="10" ry="10" fill="#ffc107"/>
+  <text x="845" y="95" font-size="14" fill="black" text-anchor="middle">React</text>
+
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
