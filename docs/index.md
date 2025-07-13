@@ -6,6 +6,8 @@ title: Ecosystem Overview
 Welcome to the DeKeyrel Homelab Ecosystem, a modular, Redis-first architecture designed for declarative automation, secure secrets management, and real-time microservice orchestration.
 This site documents the core components, patterns, and roles that power the system—each built to be composable, transparent, and open-source.
 
+---
+
 ## 🧭 Architectural Flow
 
 ```mermaid
@@ -25,14 +27,27 @@ flowchart TD
     S --> M
 ```
 
+---
+
 ## 🔍 Overview
 High-level summary of the homelab architecture, guiding principles, and role-based structure.
+
+---
+
 ## 🔐 Vault
 Provisioning and configuring HashiCorp Vault via Ansible, including Kubernetes authentication and transit encryption.
+
+---
+
 ## ⚙️ MicroK8s
 Cluster setup using Ansible, plugin enablement, and Vault integration for secrets management.
+
+---
+
 ## 🗝️ Secret Manager
 Lifecycle of secrets: encrypted via Vault Transit, stored in MicroK8s, and consumed by microservices at runtime.
+
+---
 
 ## 🧩 Related Repositories
 
@@ -46,6 +61,7 @@ Lifecycle of secrets: encrypted via Vault Transit, stored in MicroK8s, and consu
 | [MatrixClient](https://github.com/dekeyrej/matrixclient) | SSE-driven RGB LED Frontend display for real-time data | 
 | [WebDisplay](https://github.com/dekeyrej/nodewebdisplay) | SSE-driven Web Frontend display for real-time data | 
 
+---
 
 ## 🧠 Philosophy
 This ecosystem is built on the belief that:
