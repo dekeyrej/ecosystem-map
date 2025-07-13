@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Ecosystem Overview
 ---
 
@@ -54,3 +53,12 @@ This ecosystem is built on the belief that:
 - Redis-first architecture enables real-time responsiveness.
 - Secrets should be encrypted, not just stored.
 - Documentation is part of the product.
+
+---
+<script type="module">
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
+    element.classList.add("mermaid");
+  });
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: true });
+</script>
