@@ -1,11 +1,3 @@
-<script type="module">
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(element => {
-    element.classList.add("mermaid");
-  });
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({ startOnLoad: true });
-</script>
-
 # 🏡 Homelab Ecosystem Overview
 Welcome to the DeKeyrel Homelab Ecosystem, a modular, Redis-first architecture designed for declarative automation, secure secrets management, and real-time microservice orchestration.
 This site documents the core components, patterns, and roles that power the system—each built to be composable, transparent, and open-source.
