@@ -30,6 +30,7 @@ Cluster setup using Ansible, plugin enablement, and Vault integration for secret
 Lifecycle of secrets: encrypted via Vault Transit, stored in MicroK8s, and consumed by microservices at runtime.
 
 ## 🧩 Related Repositories
+
 | Repo | Purpose | 
 |---|---|
 | [Ansible](https://github.com/dekeyrej/ansible) | Core automation roles for provisioning and configuration | 
