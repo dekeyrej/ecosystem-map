@@ -1,1 +1,13 @@
-{% include head-custom.html %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        {% include head-custom.html %}
+    </head>
+    <body>
+        <main>
+            {{ content }}
+        </main>
+    </body>
+</html>

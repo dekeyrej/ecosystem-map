@@ -1,3 +1,8 @@
+---
+layout: default
+title: Ecosystem Overview
+---
+
 # 🏡 Homelab Ecosystem Overview
 Welcome to the DeKeyrel Homelab Ecosystem, a modular, Redis-first architecture designed for declarative automation, secure secrets management, and real-time microservice orchestration.
 This site documents the core components, patterns, and roles that power the system—each built to be composable, transparent, and open-source.

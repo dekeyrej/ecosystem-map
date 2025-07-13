@@ -1,3 +1,5 @@
 markdown: GFM
+theme: null
 include:
   - _includes
+  - _layouts
