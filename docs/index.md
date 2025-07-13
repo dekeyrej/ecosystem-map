@@ -3,6 +3,7 @@ Welcome to the DeKeyrel Homelab Ecosystem, a modular, Redis-first architecture d
 This site documents the core components, patterns, and roles that power the system—each built to be composable, transparent, and open-source.
 
 ## 🧭 Architectural Flow
+
 ```mermaid
 flowchart TD
     A[Ansible Playbooks]
