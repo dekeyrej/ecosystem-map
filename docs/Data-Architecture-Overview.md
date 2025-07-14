@@ -10,7 +10,7 @@ A high-level overview of how data flows through my ecosystem: ingestion, storage
 
 ## 📡 Real-Time Pipeline
 
-Data Flow (Blue links are one time at start-up only):
+Data Flow (Blue links are one time, at start-up only):
 ```mermaid
 flowchart LR
   subgraph Kubernetes
@@ -30,8 +30,6 @@ style Client fill:#fe1,color:#000
 style Kubernetes fill:#fff,stroke:eea,stroke-width:1px,color:#444
 linkStyle 4,5 stroke:#00F,color:blue
 ```
-
-![Future Pipeline](https://github.com/dekeyrej/ecosystem-map/blob/main/diagrams/to-be_data_flow.svg)
 
 Sequence Diagram:
 ```mermaid
